@@ -16,19 +16,19 @@ public class Area {
     void area( int length)
     {
         int sq=length*length;
-        System.out.println("Area of Square is"+sq);
+        System.out.println("Area of Square is "+sq);
 
     }
     void area( int length , int breadth)
     {
         int re=length*breadth;
-        System.out.println("Area of rectangle is"+re);
+        System.out.println("Area of rectangle is "+re);
 
     }
     void area( int base , int height,double n)
     {
         double rt=n*base*height;
-        System.out.println("Area of rectangle is"+rt);
+        System.out.println("Area of rectangle is "+rt);
 
     }
 
