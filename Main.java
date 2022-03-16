@@ -4,7 +4,7 @@ public class Main
     public static void main(String[] args)
     {
         Scanner obj =new Scanner(System.in);
-        System.out.println("Enter the value of n : ");
+        System.out.println("Enter the number of rows you want to print : ");
         int n=obj.nextInt();
         for(int i=1;i<=n;i++)
         {
