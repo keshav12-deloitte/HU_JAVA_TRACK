@@ -3,15 +3,13 @@ public class Animals {
     private String b;
     private int c;
 
-    public Animals() {
-    }
 
     public void seta(int a) {
         this.a = a;
     }
 
     public int geta() {
-        return this.a;
+        return a;
     }
 
     public void setb(String b) {
@@ -19,7 +17,7 @@ public class Animals {
     }
 
     public String getb() {
-        return this.b;
+        return b;
     }
 
     public void setc(int c) {
@@ -27,6 +25,6 @@ public class Animals {
     }
 
     public int getc() {
-        return this.c;
+        return c;
     }
 }
