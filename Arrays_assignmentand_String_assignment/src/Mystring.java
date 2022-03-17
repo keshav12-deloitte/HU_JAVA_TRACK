@@ -2,7 +2,7 @@ package Arrays_assignmentand_String_assignment.src;
 
 import java.util.Scanner;
 
-public class Strings_up {
+public class Mystring {
     public static void main(String[] args) {
         int i,j;
         int n,prev;
