@@ -1,3 +1,5 @@
+package Arrays_assignmentand_String_assignment.src;
+
 import java.util.Scanner;
 public class Arrays2 {
     public static void main(String[] args) {
