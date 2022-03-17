@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Strings_up {
     public static void main(String[] args) {
-        int i,j,k;
+        int i,j;
         int n,prev;
         int n1,prev1;
         prev=0;
         prev1=0;n=0;
         n1=0;
+        int k=0;
         Scanner sc = new Scanner(System.in);
         System.out.println("enter String 1");
         String s1 = sc.nextLine();
@@ -32,46 +33,37 @@ public class Strings_up {
         {
             s6[i]=s3.charAt(i);
         }
-        for(i=0;i<s3.length();i++)
+
+        for(i=0;i< s6.length;i++)
         {
             for(j=0;j<s4.length;j++)
             {
                 if(s6[i] == s4[j])
                 {
                     n=j;
-                    if(prev >= n)
+                    if(prev > n)
                     {
                         System.out.println("invalid ");
-
                     }
-
+                    prev=n;
                 }
-                prev=n;
+
             }
 
-            for(j=0;j<s5.length;j++)
+            for(j=k;k<s5.length;k++)
             {
-                if(s6[i] == s5[j])
+                if(s6[i] == s5[k])
                 {
-                    n1=j;
-                    if(prev1 >= n1)
+                    n1=k;
+                    if(prev1 > n1)
                     {
                         System.out.println("invalid ");
-
-
                     }
-
+                    prev1=n1;
                 }
-                prev1=n1;
+
             }
-
-
         }
-
         System.out.println("valid");
-
-
-
-
     }
 }
