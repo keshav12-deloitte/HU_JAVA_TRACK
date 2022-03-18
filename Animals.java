@@ -5,8 +5,7 @@ public class Animals {
 
 
     public void seta(int a1) {
-        int a = a1 ;
-        this.a = a1;
+        a = a1 ;
     }
 
     public int geta() {
@@ -23,8 +22,7 @@ public class Animals {
     }
 
     public void setc(int c1) {
-        int c =c1;
-        this.c = c1;
+        c =c1;
     }
 
     public int getc() {
