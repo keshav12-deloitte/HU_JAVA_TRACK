@@ -1,4 +1,4 @@
-public class My {
+public class My extends Area {
     public static void main(String[] args) {
        Area obj = new Area();
        obj.radius=5;
