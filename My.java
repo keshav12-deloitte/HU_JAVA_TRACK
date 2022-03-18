@@ -1,6 +1,6 @@
 public class My extends Area {
     public static void main(String[] args) {
-       Area obj = new Area();
+       My obj = new My();
        obj.radius=5;
        obj.area();
        obj.area(5);
