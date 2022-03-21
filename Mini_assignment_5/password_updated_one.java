@@ -18,9 +18,16 @@ class Password12 extends Exception
     public String getLocalizedMessage() {
         return "your password should have more than 5 characters";
     }
+    public String chara()
+    {
+        return "your password should have special symbols";
+    }
+
+
 
     public String checker(String check)
     {
+        int count=0;
         String check1;
         String check2;
         String check3;
@@ -29,7 +36,6 @@ class Password12 extends Exception
         check1=check.toLowerCase(Locale.ROOT);
         check2=check.toUpperCase(Locale.ROOT);
         check3=check;
-        check4=check;
         check5=check;
         if(check==check1)
         {
@@ -43,7 +49,25 @@ class Password12 extends Exception
         {
             return getLocalizedMessage();
         }
-        return check1;
+
+        if (!(check.contains("@") || check.contains("#")
+                || check.contains("!") || check.contains("~")
+                || check.contains("$") || check.contains("%")
+                || check.contains("^") || check.contains("&")
+                || check.contains("*") || check.contains("(")
+                || check.contains(")") || check.contains("-")
+                || check.contains("+") || check.contains("/")
+                || check.contains(":") || check.contains(".")
+                || check.contains(", ") || check.contains("<")
+                || check.contains(">") || check.contains("?")
+                || check.contains("|")))
+        {
+            return chara();
+        }
+
+
+
+        return check1+ "your password is in correct format";
     }
 }
 public class password_updated_one {
