@@ -1,10 +1,10 @@
 public class Area {
-    protected int length;
-    protected int breadth;
-    protected int radius;
-    protected int base;
-    protected int height;
-    protected double n;
+     protected int length;
+     protected int breadth;
+     protected int radius;
+     protected int base;
+     protected int height;
+     protected double n;
      protected void area()
     {
         double pie=3.14;
