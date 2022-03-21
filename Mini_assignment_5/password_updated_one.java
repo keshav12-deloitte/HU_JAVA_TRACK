@@ -13,6 +13,12 @@ class Password12 extends Exception
     public String toString() {
         return "your password should have first letter as uppercase";
     }
+
+    @Override
+    public String getLocalizedMessage() {
+        return "your password should have more than 5 characters";
+    }
+
     public String checker(String check)
     {
         String check1;
@@ -32,6 +38,10 @@ class Password12 extends Exception
         if(check==check2)
         {
             return getMessage();
+        }
+        if(check3.length()<=5)
+        {
+            return getLocalizedMessage();
         }
         return check1;
     }
