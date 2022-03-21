@@ -10,6 +10,14 @@ class Password1 extends Exception{
     public String toString() {
         return "your password should have lowercase";
     }
+    static void checker (String check)
+    {
+        String check1;
+        String check2;
+        String check3;
+        String check4;
+        String check5;
+    }
 }
 public class Password {
     public static void main(String[] args) {
