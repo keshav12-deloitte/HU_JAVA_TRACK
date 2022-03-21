@@ -1,3 +1,5 @@
+package Mini_assignment_5;
+
 import java.util.Locale;
 import java.util.Scanner;
 class Password12 extends Exception

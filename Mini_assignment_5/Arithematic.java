@@ -1,3 +1,5 @@
+package Mini_assignment_5;
+
 import java.util.Scanner;
 
 public class Arithematic {
