@@ -12,11 +12,12 @@ public class First_page extends Registration_page {
     }
     static  String verify_Age(int age)
     {
-        if(age>=100 && age<=18)
+        if(age>=100 || age<=18)
         {
-            return "You should enter age between 18 and 100";
+            System.out.println("You should enter age between 18 and 100");
+            System.exit(0);
         }
-        else
+
             return " ";
     }
     static String verify_salary(int salary)
@@ -25,6 +26,7 @@ public class First_page extends Registration_page {
         if(salary<=0)
         {
             System.out.println("enter the correct salary thats is"+"\nNot less than zero");
+            System.exit(0);
         }
         return " ";
     }
